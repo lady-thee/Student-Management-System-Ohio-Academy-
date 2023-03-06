@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-11</y>
+     <width>561</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>561</width>
+     <height>561</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>561</width>
+     <height>561</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(66, 73, 84);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="otpbtn">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>280</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(255,148,26);
+color: white;
+border-radius: 9px;
+font: 13pt open sans semibold;</string>
+    </property>
+    <property name="text">
+     <string>Verify OTP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="otp_line">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: white;
+font: 11pt open sans semibold;
+border-radius: 5px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter OTP</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="Background">
+      <property name="styleSheet">
+       <string notr="true">#Background{
+background-color: rgb(66, 73, 84);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="mainbd">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="sidemenu">
+            <property name="minimumSize">
+             <size>
+              <width>230</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>230</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QPushButton" name="coursesbtn">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>150</y>
+               <width>160</width>
+               <height>70</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#coursesbtn{
+  background: transparent;
+	color: rgb(255, 148, 26);
+   font: 16pt open sans semibold;
+   text-shadow: 1px 2px 1px #f7f7f7ff;
+   
+}
+
+#coursesbtn:hover{
+  background: rgb(255, 148, 26);
+	color: #f7f7f7ff;
+   font: 16pt open sans semibold;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Courses</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/courses.svg</normaloff>icons/courses.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="booksbtn">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>240</y>
+               <width>160</width>
+               <height>70</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#booksbtn{
+  background: transparent;
+	color: rgb(255, 148, 26);
+   font: 16pt open sans semibold;
+   text-shadow: 1px 2px 1px #f7f7f7ff;
+}
+
+#booksbtn:hover{
+  background: rgb(255, 148, 26);
+	color:#f7f7f7ff ;
+   font: 16pt open sans semibold;
+	border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Books</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/books-svgrepo-com.svg</normaloff>icons/books-svgrepo-com.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="settingsbtn">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>340</y>
+               <width>170</width>
+               <height>70</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>170</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>170</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#settingsbtn{
+  background: transparent;
+	color: rgb(255, 148, 26);
+   font: 16pt open sans semibold;
+   text-shadow: 1px 2px 1px #f7f7f7ff;
+}
+
+#settingsbtn:hover{
+  background: rgb(255, 148, 26);
+	color:#f7f7f7ff ;
+   font: 16pt open sans semibold;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Settings</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/settings-svgrepo-com (2).svg</normaloff>icons/settings-svgrepo-com (2).svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="logoutbtn">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>510</y>
+               <width>160</width>
+               <height>50</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#logoutbtn{
+  background: rgb(255, 148, 26);
+	color:#f7f7f7ff;
+   font: 14pt open sans semibold;
+   text-shadow: 1px 2px 1px #f7f7f7ff;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string>Log Out</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icons/log-out-svgrepo-com.svg</normaloff>icons/log-out-svgrepo-com.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>50</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLabel" name="linelabel">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>120</y>
+               <width>150</width>
+               <height>5</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 148, 26);
+border-radius: 10px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>50</y>
+               <width>231</width>
+               <height>47</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="ohio">
+                <property name="styleSheet">
+                 <string notr="true">#ohio{
+   color: rgb(255, 148, 26);
+   font: 20pt open sans semibold;
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Ohio</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="academy">
+                <property name="styleSheet">
+                 <string notr="true">#academy{
+   color: #f7f7f7ff;
+	font: 20pt open sans semibold;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Academy</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="dash">
+            <property name="styleSheet">
+             <string notr="true">background-color: #f7f7f7ff;
+border-radius: 10px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Sunken</enum>
+            </property>
+            <widget class="QLabel" name="names">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>30</y>
+               <width>300</width>
+               <height>40</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font:12pt open sans semibold;
+color: rgb(255, 148, 26);
+background: transparent;</string>
+             </property>
+             <property name="text">
+              <string>Hi, Eden Maduakoh</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="deplabel">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>90</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(66, 73, 84);
+font: 13pt open sans semibold;</string>
+             </property>
+             <property name="text">
+              <string>Department:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="level">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>190</y>
+               <width>51</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 148, 26);
+font: 11pt open sans semibold;
+background: transparent;</string>
+             </property>
+             <property name="text">
+              <string>100L</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="levlabel">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>165</y>
+               <width>61</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(66, 73, 84);
+font: 13pt open sans semibold;</string>
+             </property>
+             <property name="text">
+              <string>Level</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="pic_lab">
+             <property name="geometry">
+              <rect>
+               <x>430</x>
+               <y>30</y>
+               <width>171</width>
+               <height>161</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-radius: 20px;
+border-color: rgb(255, 148, 26);
+border-color: rgb(255, 148, 26);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pic_chbtn">
+             <property name="geometry">
+              <rect>
+               <x>480</x>
+               <y>200</y>
+               <width>111</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#pic_chbtn{
+	background-color: rgb(255,148,26);
+    color: #f7f7f7ff;
+	font: 8pt open sans semibold;
+border: 2px solid rgb(66, 73, 84);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+   border-top-left-radius: 0px;
+}</string>
+             </property>
+             <property name="text">
+              <string>change picture...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="department">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>120</y>
+               <width>231</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 148, 26);
+font: 12pt open sans semibold;
+background: transparent;</string>
+             </property>
+             <property name="text">
+              <string>Computer Science</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="emaillabel">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>320</y>
+               <width>61</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(66, 73, 84);
+font: 13pt open sans semibold;</string>
+             </property>
+             <property name="text">
+              <string>Email</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="email">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>350</y>
+               <width>251</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 148, 26);
+font: 12pt open sans semibold;
+background: transparent;</string>
+             </property>
+             <property name="text">
+              <string>rabbithole34@gmail.com</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="acalabel">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>230</y>
+               <width>201</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(66, 73, 84);
+font: 13pt open sans semibold;</string>
+             </property>
+             <property name="text">
+              <string>Academic Session</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="acadsess">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>270</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 148, 26);
+font: 12pt open sans semibold;
+background: transparent;</string>
+             </property>
+             <property name="text">
+              <string>2022/2023</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="paymlabel">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>415</y>
+               <width>151</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(66, 73, 84);
+font: 18pt open sans semibold;</string>
+             </property>
+             <property name="text">
+              <string>Payments</string>
+             </property>
+            </widget>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>490</y>
+               <width>500</width>
+               <height>100</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>500</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>400</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#QTableWidget{
+  color: rgb(255, 148, 26);
+baclground-color: black;
+
+}</string>
+             </property>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>School Fees</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Open Sans Semibold</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Hostel Fee</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Open Sans Semibold</family>
+                <pointsize>11</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Departmental Dues</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Open Sans Semibold</family>
+                <pointsize>11</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+            </widget>
+            <widget class="QLabel" name="label">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>460</y>
+               <width>121</width>
+               <height>5</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 148, 26);
+border-radius: 10px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="calmenu">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footer">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

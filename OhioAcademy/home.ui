@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>1221</width>
+     <height>811</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#frame{background-color:rgb(66,73,84)}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="home_regbtn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>400</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#home_regbtn{background-color: rgb(255, 148, 26);
+color: #f7f7f7ff;
+font: 63 25pt &quot;Open Sans Semibold&quot;;
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>REGISTER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="home_regbtn_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>530</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#home_regbtn_2{background-color: rgb(255, 148, 26);
+color: #f7f7f7ff;
+font: 63 25pt &quot;Open Sans Semibold&quot;;
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>548</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lg_ohio">
+       <property name="styleSheet">
+        <string notr="true">font: 48pt &quot;Niagara Engraved&quot;;
+font: 63 48pt &quot;Open Sans Semibold&quot;;
+color: rgb(255, 148, 26);</string>
+       </property>
+       <property name="text">
+        <string>Ohio</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lg_aca">
+       <property name="styleSheet">
+        <string notr="true">font: 63 48pt &quot;Open Sans Semibold&quot;;
+color:#f7f7f7ff</string>
+       </property>
+       <property name="text">
+        <string>Academy</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
